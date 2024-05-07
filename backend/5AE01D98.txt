@@ -8,9 +8,3 @@ const app = express();
 app.get('/hello', (req, res) => {
     res.send('Hello, World!');
 });
-
-// Menentukan port server dan mendengarkan permintaan
-const port = 3000;
-app.listen(port, () => {
-    console.log(`Server berjalan di http://localhost:${port}`);
-});
